@@ -1,4 +1,4 @@
-/* Estilo básico para o corpo da página */
+/* Estilos gerais */
 body {
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
@@ -6,7 +6,13 @@ body {
     padding: 0;
 }
 
-/* Estilo para o cabeçalho */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Estilos para o cabeçalho */
 header {
     background-color: #333;
     color: #fff;
@@ -16,80 +22,59 @@ header {
 
 header h1 {
     margin: 0;
+    font-size: 2.5em;
 }
 
-header nav ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-header nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-header nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-header nav ul li a:hover {
-    color: #66cdaa;
-}
-
-/* Estilo para as seções */
-section {
-    padding: 20px;
-    margin: 20px 0;
+/* Estilos para o conteúdo principal */
+.main-content {
     background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
-section h2 {
+/* Estilos para as seções */
+.section {
+    margin-bottom: 20px;
+}
+
+.section h2 {
     color: #333;
+    font-size: 1.5em;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
 }
 
-section p {
-    color: #666;
+.section p {
     line-height: 1.6;
 }
 
-/* Estilo para os botões "Saiba Mais" */
-.botao-saiba-mais {
-    display: inline-block;
-    background-color: #007bff;
-    color: #fff;
-    text-decoration: none;
-    padding: 8px 16px;
-    margin-top: 10px;
-    border-radius: 4px;
-    transition: background-color 0.3s ease;
-}
-
-.botao-saiba-mais:hover {
-    background-color: #0056b3;
-}
-
-/* Estilo para as imagens dentro dos containers */
-.container {
-    text-align: center;
-    margin-top: 10px;
-}
-
-.container img {
-    border-radius: 4px;
-    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
-}
-
-/* Estilo para o rodapé */
-footer {
-    background-color: #333;
-    color: #fff;
+/* Estilos para o rodapé */
+.pinto {
     text-align: center;
     padding: 10px 0;
-    position: fixed;
+    background-color: #333;
+    color: #fff;
     bottom: 0;
     width: 100%;
+}
+
+/* Estilos específicos para elementos relacionados à cerca */
+.about-cerca {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.about-cerca h3 {
+    color: #333;
+    font-size: 1.2em;
+    margin-top: 0;
+}
+
+.about-cerca p {
+    line-height: 1.6;
 }
